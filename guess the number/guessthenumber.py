@@ -12,6 +12,7 @@ def guess_the_numer(x):
 
         if guess == random_number:
             print(f"Congrats, The looking number is {x}")
+            break
         elif guess < random_number:
             print("Too low")
         else:
