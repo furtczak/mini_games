@@ -3,7 +3,7 @@ from guessthenumber import guess_the_number
 
 while True:
     txt = """Mini Games!!!
-    - Guess The Number (a)
+    - Guess The Number (1)
     - Rock, Paper, Scissors (2)
     - Wordle (3)
     - ConnectFour (4)
