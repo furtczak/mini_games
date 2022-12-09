@@ -1,4 +1,4 @@
-
+from rps import rock_paper_scissors
 from guessthenumber import guess_the_number
 
 while True:
