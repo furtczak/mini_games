@@ -13,4 +13,4 @@ Select a game (press a number or 'q' to quit): """
     if value == "1":
         guess_the_number(100)
     if value =="2":
-        rock_paper_scissors()
+        rock_paper_scissors
