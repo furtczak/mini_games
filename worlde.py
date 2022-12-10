@@ -1,6 +1,6 @@
 import random
 from rich import print
-word =("awake",
+word =["awake",
     "blush",
     "focal",
     "evade",
@@ -9,7 +9,7 @@ word =("awake",
     "karma",
     "grade",
     "quiet"
-    )
+    ]
 
 
 
@@ -47,7 +47,7 @@ class Wordle:
                     char = f"[green]{char}[/]" # gree
                 else:
                     char = f"[yellow]{char}[/]" # yellow
-            self.guess_dict[self.num_guesses][idx]= char
+            self.guess_dict[min(self.num_guesses, 4)][idx]= char
 
         self.num_guesses += 1
         return user_guess
