@@ -1,14 +1,15 @@
 import random
 from rich import print
 word =("awake",
-"blush",
-"focal",
-"evade",
-"serve",
-"model",
-"karma",
-"grade",
-"quiet")
+    "blush",
+    "focal",
+    "evade",
+    "serve",
+    "model",
+    "karma",
+    "grade",
+    "quiet"
+    )
 
 
 
@@ -43,7 +44,7 @@ class Wordle:
         for idx, char in enumerate(user_guess):
             if char in self.word:
                 if char == self.word[idx]:
-                    char = f"[gree]{char}[/]" # gree
+                    char = f"[green]{char}[/]" # gree
                 else:
                     char = f"[yellow]{char}[/]" # yellow
             self.guess_dict[self.num_guesses][idx]= char
