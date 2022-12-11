@@ -1,6 +1,8 @@
 from rps import rock_paper_scissors
 from guessthenumber import guess_the_number
 from worlde import Wordle
+from connect_4 import Connectfour
+from tiktaktoe import TicTacTogame
 while True:
     txt = """Mini Games!!!
     - Guess The Number (1)
@@ -17,5 +19,11 @@ Select a game (press a number or 'q' to quit): """
     if value =="3":
         game = Wordle()
         game.play()
+    if value =="4":
+        game = Connectfour()
+        game.play()    
+    if value =="5":
+        game = TicTacTogame()
+        game.play()  
     else:
         break
